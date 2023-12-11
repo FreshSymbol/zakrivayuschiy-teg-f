@@ -17,8 +17,8 @@
     ),
     repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #007f0c 0.01%, #004306);
-  --base-wdth: 465;
-  --accent-wdth: 785;
+  --base-weight: 465;
+  --accent-weight: 785;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -34,8 +34,8 @@
       ),
       repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
       linear-gradient(to bottom, #007f0c 0.01%, #004306);
-    --base-wdth: 465;
-    --accent-wdth: 785;
+    --base-weight: 465;
+    --accent-weight: 785;
   }
 }
 
@@ -51,6 +51,6 @@
     ),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-  --base-wdth: 400;
-  --accent-wdth: 700;
+  --base-weight: 400;
+  --accent-weight: 700;
 }

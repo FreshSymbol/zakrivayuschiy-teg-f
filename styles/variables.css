@@ -14,7 +14,7 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --base-font: Inter, sans-serif;
   --accent-font: PressStart2P, sans-serif;
-  --base-wdth: 400;
-  --accent-wdth: 700;
+  --base-weight: 400;
+  --accent-weight: 700;
   --width-content: clamp(23.188rem, 15.947rem + 30.892vw, 43.75rem);
 }

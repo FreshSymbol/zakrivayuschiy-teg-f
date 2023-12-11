@@ -17,7 +17,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--base-font);
-  font-variation-settings: "wgth" var(--base-width);
+  font-variation-settings: "wgth" var(--base-weight);
   color: var(--base-color);
   font-size: 18px;
   line-height: 21px;
@@ -129,7 +129,7 @@
 .card__title {
   margin: 5px 10px;
   font-size: inherit;
-  font-variation-settings: "wgth" var(--accent-width);
+  font-variation-settings: "wgth" var(--accent-weight);
 }
 
 .card__image-wrapper {
