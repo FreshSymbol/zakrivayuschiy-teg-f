@@ -17,7 +17,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--base-font);
-  font-variation-settings: "wgth" var(--base-weight);
+  font-weight: normal;
   color: var(--base-color);
   font-size: 18px;
   line-height: 21px;
@@ -204,6 +204,7 @@
 
 .card__text {
   margin: 23px 25px 7px;
+  font-variation-settings: "wgth" var(--base-weight);
 }
 
 .card__button-wrapper {
