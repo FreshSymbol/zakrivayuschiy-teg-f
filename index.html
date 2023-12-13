@@ -80,7 +80,7 @@
               <img
                 src="./images/map.jpg"
                 alt="Карта с маршрутами"
-                class="card__image preparation"
+                class="card__image grayscale"
               />
             </picture>
           </div>
@@ -142,7 +142,7 @@
               <img
                 src="./images/road.jpg"
                 alt="Изображение волнистой дороги вверх"
-                class="card__image start"
+                class="card__image blur"
                 loading="lazy"
               />
             </picture>
@@ -206,7 +206,7 @@
               <img
                 src="./images/first-victory.jpg"
                 alt="Девушка радостно кричит сидя на коленях на песочном пляже"
-                class="card__image first-victory"
+                class="card__image hue-rotate"
                 loading="lazy"
               />
             </picture>
@@ -268,7 +268,7 @@
               <img
                 src="./images/level.jpg"
                 alt="Строительный уровень с жидкостью"
-                class="card__image perfectionism"
+                class="card__image brightness"
                 loading="lazy"
               />
             </picture>
@@ -330,7 +330,7 @@
               <img
                 src="./images/support.jpg"
                 alt="Четверо людей держаться за руки, образуя квадрат"
-                class="card__image support"
+                class="card__image contrast"
                 loading="lazy"
               />
             </picture>
@@ -396,7 +396,7 @@
               <img
                 src="./images/chess.jpg"
                 alt="Изображение шахматной доски с размытием"
-                class="card__image strategy"
+                class="card__image opacity-invert"
                 loading="lazy"
               />
             </picture>
@@ -459,7 +459,7 @@
               <img
                 src="./images/concentration.jpg"
                 alt="Мужчина с закрытыми глазами на черном фоне"
-                class="card__image concentration"
+                class="card__image saturate"
                 loading="lazy"
               />
             </picture>
@@ -525,7 +525,7 @@
               <img
                 src="./images/mountain.jpg"
                 alt="Мужчина на вершине скалы, смотрит вниз на проделаный путь"
-                class="card__image just-do-it"
+                class="card__image drop-shadow"
                 loading="lazy"
               />
             </picture>
@@ -580,30 +580,28 @@
           </div>
         </li>
       </ul>
-      <button class="button-save button" popovertarget="popup">
-        <svg
-          class="button-save__icon"
-          viewBox="0 0 28 28"
-          height="21"
-          width="21"
-        >
+      <button
+        class="button-save button"
+        type="button"
+        onclick="window['popup'].showModal()"
+        aria-controls="popup"
+      >
+        <svg class="button-save__icon" viewBox="0 0 28 28">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
 
-      <dialog class="popup" id="popup" popover="manual">
-        <svg class="popup__icon" viewBox="0 0 28 28" height="39" width="39">
+      <dialog class="popup" id="popup">
+        <svg class="popup__icon" viewBox="0 0 28 28">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <p class="popup__text">Вставьте дискету, чтобы продолжить</p>
-        <button
-          class="button popup__button"
-          popovertarget="popup"
-          popovertargetaction="hide"
-        >
-          <span class="button__text">ok</span>
-        </button>
+        <form method="dialog">
+          <button class="button popup__button" type="submit">
+            <span class="button__text">ok</span>
+          </button>
+        </form>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
