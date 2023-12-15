@@ -31,7 +31,7 @@
   justify-items: center;
   max-inline-size: var(--width-content);
   margin: 101px auto;
-  padding: 23px;
+  padding: 23px 14px;
   font-family: var(--accent-font);
   font-weight: 400;
   color: var(--base-color);
@@ -367,13 +367,8 @@ form {
 }
 
 @media (width<376px) {
-  .header {
-    margin: 100px auto;
-    padding: 25px 15px;
-  }
-
   .header__logo {
-    margin: 110px auto 29px;
+    margin: 98px 0 0;
   }
 
   .theme-menu__list {
