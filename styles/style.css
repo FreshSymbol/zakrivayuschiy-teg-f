@@ -30,8 +30,8 @@
   display: grid;
   justify-items: center;
   max-inline-size: var(--width-content);
-  margin: 70px auto 100px;
-  padding: 20px;
+  margin: 101px auto;
+  padding: 23px;
   font-family: var(--accent-font);
   font-weight: 400;
   color: var(--base-color);
@@ -40,10 +40,12 @@
 }
 
 .header__logo {
-  margin: 138px auto 42px;
+  min-block-size: 65px;
+  margin: 110px auto 22px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
   text-decoration: none;
+  line-height: 100%;
 }
 
 .header__title {
@@ -225,6 +227,7 @@
 }
 
 .card__icon-button {
+  display: grid;
   background: transparent;
   border: none;
 }
@@ -236,6 +239,10 @@
 .card__icon-button:focus-visible {
   outline: 2px solid var(--base-color);
   outline-offset: -4px;
+}
+
+.like-icon {
+  margin: 2.5px;
 }
 
 .like-icon:hover {
@@ -280,13 +287,15 @@
 }
 
 .card__like-button {
-  max-block-size: 38px;
+  min-block-size: 38px;
 }
 
 .button__text {
-  position: relative;
+  position: absolute;
   z-index: 1;
-  inset: 0;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
   font-size: 14px;
   line-height: 12.6px;
   font-family: var(--accent-font);
