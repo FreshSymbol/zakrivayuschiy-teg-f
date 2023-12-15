@@ -38,7 +38,7 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="header__logo">&lt;/html&gt;</div>
+      <a class="header__logo" href="#0">&lt;/html&gt;</a>
       <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -73,7 +73,7 @@
             Фритрек и нулевой спринт: Подготовка к работе
           </h2>
           <div class="card__image-wrapper">
-            <label class="card__image-label">&lt;preparation&gt;</label>
+            <span class="card__image-label">&lt;preparation&gt;</span>
             <picture class="card__picture">
               <source srcset="./images/map.webp" type="images/webp" />
               <source srcset="./images/map.avif" type="images/avif" />
@@ -135,7 +135,7 @@
         <li class="card__item">
           <h2 class="card__title">1 спринт: Я — чистый лист</h2>
           <div class="card__image-wrapper">
-            <label class="card__image-label">&lt;start&gt;</label>
+            <span class="card__image-label">&lt;start&gt;</span>
             <picture class="card__picture">
               <source srcset="./images/road.webp" type="images/webp" />
               <source srcset="./images/road.avif" type="images/avif" />
@@ -199,7 +199,7 @@
         <li class="card__item">
           <h2 class="card__title">1 спринт: А если не получится?</h2>
           <div class="card__image-wrapper">
-            <label class="card__image-label">&lt;first-victory&gt;</label>
+            <span class="card__image-label">&lt;first-victory&gt;</span>
             <picture class="card__picture">
               <source srcset="./images/first-victory.webp" type="images/webp" />
               <source srcset="./images/first-victory.avif" type="images/avif" />
@@ -261,7 +261,7 @@
         <li class="card__item">
           <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
           <div class="card__image-wrapper">
-            <label class="card__image-label">&lt;perfectionism&gt;</label>
+            <span class="card__image-label">&lt;perfectionism&gt;</span>
             <picture class="card__picture">
               <source srcset="./images/level.webp" type="images/webp" />
               <source srcset="./images/level.avif" type="images/avif" />
@@ -323,7 +323,7 @@
         <li class="card__item">
           <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
           <div class="card__image-wrapper">
-            <label class="card__image-label">&lt;support&gt;</label>
+            <span class="card__image-label">&lt;support&gt;</span>
             <picture class="card__picture">
               <source srcset="./images/support.webp" type="images/webp" />
               <source srcset="./images/support.avif" type="images/avif" />
@@ -389,7 +389,7 @@
         <li class="card__item">
           <h2 class="card__title">3 спринт: Обходные стратегии</h2>
           <div class="card__image-wrapper">
-            <label class="card__image-label">&lt;strategy&gt;</label>
+            <span class="card__image-label">&lt;strategy&gt;</span>
             <picture class="card__picture">
               <source srcset="./images/chess.webp" type="images/webp" />
               <source srcset="./images/chess.avif" type="images/avif" />
@@ -452,7 +452,7 @@
         <li class="card__item">
           <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
           <div class="card__image-wrapper">
-            <label class="card__image-label">&lt;concentration&gt;</label>
+            <span class="card__image-label">&lt;concentration&gt;</span>
             <picture class="card__picture">
               <source srcset="./images/concentration.webp" type="images/webp" />
               <source srcset="./images/concentration.avif" type="images/avif" />
@@ -518,7 +518,7 @@
         <li class="card__item">
           <h2 class="card__title">«Сейчас я здесь»</h2>
           <div class="card__image-wrapper">
-            <label class="card__image-label">&lt;just-do-it&gt;</label>
+            <span class="card__image-label">&lt;just-do-it&gt;</span>
             <picture class="card__picture">
               <source srcset="./images/mountain.webp" type="images/webp" />
               <source srcset="./images/mountain.avif" type="images/avif" />
@@ -586,14 +586,14 @@
         onclick="window['popup'].showModal()"
         aria-controls="popup"
       >
-        <svg class="button-save__icon" viewBox="0 0 28 28">
+        <svg class="button-save__icon" viewBox="0 0 28 28" aria-hidden="true">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
 
       <dialog class="popup" id="popup">
-        <svg class="popup__icon" viewBox="0 0 28 28">
+        <svg class="popup__icon" viewBox="0 0 28 28" aria-hidden="true">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <p class="popup__text">Вставьте дискету, чтобы продолжить</p>
