@@ -250,12 +250,16 @@
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   min-inline-size: 130px;
   padding: 9px 17px;
   background-color: var(--bg-color);
   border: 2px solid var(--base-color);
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .button:focus {
@@ -278,10 +282,6 @@
   transition: 0.5s ease-in-out;
 }
 
-.button:hover {
-  cursor: pointer;
-}
-
 .button:hover::before {
   transform: scaleX(1);
 }
@@ -291,11 +291,8 @@
 }
 
 .button__text {
-  position: absolute;
+  position: relative;
   z-index: 1;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
   font-size: 14px;
   line-height: 12.6px;
   font-family: var(--accent-font);
@@ -362,6 +359,7 @@ form {
 
 .popup__button {
   min-inline-size: 293px;
+  min-block-size: 38px;
   padding: 7px;
   text-transform: uppercase;
 }
